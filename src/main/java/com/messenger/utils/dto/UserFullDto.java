@@ -1,4 +1,4 @@
-package com.messenger.utils.domain;
+package com.messenger.utils.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
-public class User implements Serializable {
+public class UserFullDto implements Serializable {
     private static final long serialVersionUID = -2717013794131382694L;
 
     private String username;

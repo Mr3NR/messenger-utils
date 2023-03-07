@@ -6,7 +6,7 @@
 
     <groupId>com.messenger.utils</groupId>
     <artifactId>simple-messenger-utils</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -20,6 +20,13 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.1.0</version>
             <scope>provided</scope>
         </dependency>
 
