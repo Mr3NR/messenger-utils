@@ -30,4 +30,10 @@ public class MessageDto<T extends Serializable> implements Serializable {
         this.success = success;
         this.comment = comment;
     }
+
+    public MessageDto(boolean success, @Nullable String comment, @Nullable T data) {
+        this.success = success;
+        this.comment = comment;
+        this.data = data;
+    }
 }
