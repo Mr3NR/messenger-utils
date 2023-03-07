@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
-public class MessageDto<T> implements Serializable {
+public class MessageDto<T extends Serializable> implements Serializable {
     private static final long serialVersionUID = -6760549396167215651L;
 
     private String auth;
@@ -19,4 +19,9 @@ public class MessageDto<T> implements Serializable {
     private Command command;
 
     private T data;
+
+    public MessageDto(boolean success, String message) {
+        this.success = success;
+        this.message = message;
+    }
 }

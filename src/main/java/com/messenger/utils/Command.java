@@ -6,5 +6,7 @@ public enum Command implements Serializable {
     MESSAGE,
     REGISTER,
     LOGIN,
-    BLOCK;
+    BLOCK,
+    SERVER_RESPONSE,
+    SERVER
 }
